@@ -28,6 +28,27 @@
   text-align: center;
 }
 
+.btn-success {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 1px;
+  width: 35px;
+}
+
+a .btn-success {
+  background-color: rgb(206, 169, 206);
+  border: 1px solid #dadde1;
+  box-shadow: 1px 1px rgb(177, 159, 255);
+}
+
+a .btn-success:hover {
+  cursor: pointer;
+  background-color: rgb(226, 218, 226);
+  border: 1px solid #dadde1;
+  transition: 150ms ease-in-out;
+}
+
 h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -119,6 +140,7 @@ footer {
   text-decoration: none;
 }
 
-.link hover {
+.link:hover {
   cursor: pointer;
+  color: rgb(216, 142, 216);
 }
