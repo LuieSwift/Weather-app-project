@@ -79,3 +79,5 @@ function pressSubmit(event) {
 
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", pressSubmit);
+
+searchCity("Leeds");
