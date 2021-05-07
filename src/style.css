@@ -105,3 +105,20 @@ p {
   position: relative;
   bottom: -20px;
 }
+
+footer {
+  text-align: center;
+  color: rgb(216, 142, 216);
+  position: relative;
+  bottom: 20px;
+  font-size: 12px;
+}
+
+.link {
+  color: rgb(39, 0, 39);
+  text-decoration: none;
+}
+
+.link hover {
+  cursor: pointer;
+}
