@@ -50,7 +50,6 @@ dateElement.innerHTML = formatDate(currentDay);
 // location & data
 
 function showWeather(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = `${Math.round(
     response.data.main.temp
