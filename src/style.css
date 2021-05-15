@@ -88,9 +88,41 @@ h1 {
   text-align: center;
 }
 
+.units {
+  position: relative;
+  right: -150px;
+  bottom: 10px;
+}
+
+a.active {
+  cursor: default;
+  color: black;
+  text-decoration: none;
+}
+
+.row {
+  text-align: center;
+  padding: 5px;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+}
+
+.col-4 {
+  padding: 5px;
+  position: relative;
+  bottom: -20px;
+}
+
+a.link {
+  color: rgb(39, 0, 39);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 h3 {
   position: relative;
   bottom: -30px;
+  right: 30px;
 }
 
 em {
@@ -113,19 +145,6 @@ p::first-letter {
   text-transform: capitalize;
 }
 
-.row {
-  text-align: center;
-  padding: 5px;
-  font-size: 11px;
-  font-family: "Poppins", sans-serif;
-}
-
-.col-4 {
-  padding: 5px;
-  position: relative;
-  bottom: -20px;
-}
-
 footer {
   text-align: center;
   color: rgb(216, 142, 216);
@@ -134,12 +153,13 @@ footer {
   font-size: 12px;
 }
 
-.link {
-  color: rgb(39, 0, 39);
-  text-decoration: none;
-}
-
 .link:hover {
   cursor: pointer;
   color: rgb(216, 142, 216);
+}
+
+a.active:hover {
+  text-decoration: none;
+  cursor: default;
+  color: black;
 }
