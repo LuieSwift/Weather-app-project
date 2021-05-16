@@ -40,7 +40,7 @@ function formatDate(date) {
   let month = months[date.getMonth()];
   let year = date.getFullYear();
 
-  return `${day} ${dateNumerical} ${month} ${year}, ${hours}:${minutes}`;
+  return `Last updated:<br />${day} ${dateNumerical} ${month} ${year}, ${hours}:${minutes}`;
 }
 
 let dateElement = document.querySelector("#date");
@@ -64,17 +64,18 @@ let forecast = response.data.daily;
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 7) {
     forecastHTML =
       forecastHTML +
       `
-      <div class="col-2">
+      <div class="col">
       <span class="weather-forecast-date">${formatDay(forecastDay.dt)}</span>
       <br />
-      <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png">
+      <img 
+      src="images/icons/${forecastDay.weather[0].icon}.svg" width="70%">
       <br />
-      <span class="weather-forecast-temperature-max">${Math.round(forecastDay.temp.max)}°C</span>
-      </span class="weather-forecast-temperature-min">${Math.round(forecastDay.temp.min)}°C</span>
+      <span class="weather-forecast-temperature-max">${Math.round(forecastDay.temp.max)}°C</span>/</span 
+      class="weather-forecast-temperature-min">${Math.round(forecastDay.temp.min)}°C</span>
       </div>
   `; 
     }
@@ -104,7 +105,7 @@ function showWeather(response) {
     "#humidity"
   ).innerHTML = `${response.data.main.humidity}%`;
   let iconElement = document.querySelector("#icon"); 
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`); 
+  iconElement.setAttribute("src", `images/icons/${response.data.weather[0].icon}.svg`); 
 
 celsiusTemperature = response.data.main.temp; 
 

@@ -83,13 +83,13 @@ h1 {
 
 .units {
   position: relative;
-  right: -150px;
-  bottom: 10px;
+  right: -147px;
+  bottom: 9px;
 }
 
 a.active {
   cursor: default;
-  color: black;
+  color: aliceblue;
   text-decoration: none;
 }
 
@@ -140,9 +140,11 @@ hr {
 }
 
 p {
+  position: relative;
+  bottom: -5px;
   color: rgb(255, 255, 255);
   text-shadow: 1px 2px 7px rgb(196, 189, 189);
-  font-size: 12.5px;
+  font-size: 13px;
 }
 
 p::first-letter {
@@ -172,5 +174,5 @@ a .btn-success:hover {
 a.active:hover {
   text-decoration: none;
   cursor: default;
-  color: black;
+  color: aliceblue;
 }
