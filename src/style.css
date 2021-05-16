@@ -43,13 +43,6 @@ a .btn-success {
   box-shadow: 1px 1px 7px rgb(177, 159, 255);
 }
 
-a .btn-success:hover {
-  cursor: pointer;
-  background-color: rgb(226, 218, 226);
-  border: 1px solid #dadde1;
-  transition: 150ms ease-in-out;
-}
-
 h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -113,6 +106,17 @@ a.active {
   bottom: -20px;
 }
 
+.weather-forecast-date {
+  font-size: 13px;
+  color: aliceblue;
+  text-shadow: 1px 0px rgb(248, 231, 231);
+  opacity: 0.7;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
+
 a.link {
   color: rgb(39, 0, 39);
   text-decoration: none;
@@ -151,6 +155,13 @@ footer {
   position: relative;
   bottom: 20px;
   font-size: 12px;
+}
+
+a .btn-success:hover {
+  cursor: pointer;
+  background-color: rgb(226, 218, 226);
+  border: 1px solid #dadde1;
+  transition: 150ms ease-in-out;
 }
 
 .link:hover {
