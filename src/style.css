@@ -83,8 +83,8 @@ h1 {
 
 .units {
   position: relative;
-  right: -147px;
-  bottom: 9px;
+  right: -151px;
+  bottom: 11px;
 }
 
 a.active {
@@ -101,13 +101,13 @@ a.active {
 }
 
 .col-4 {
-  padding: 5px;
+  padding: 2px;
   position: relative;
   bottom: -20px;
 }
 
 .weather-forecast-date {
-  font-size: 13px;
+  font-size: 10px;
   color: aliceblue;
   text-shadow: 1px 0px rgb(248, 231, 231);
   opacity: 0.7;
@@ -115,6 +115,10 @@ a.active {
 
 .weather-forecast-temperature-max {
   font-weight: bold;
+}
+
+.weather-forecast-temperature-min {
+  font-size: 8px;
 }
 
 a.link {
@@ -127,6 +131,7 @@ h3 {
   position: relative;
   bottom: -30px;
   right: 30px;
+  font-size: 38px;
 }
 
 em {
