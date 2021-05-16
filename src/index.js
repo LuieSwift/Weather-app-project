@@ -72,7 +72,7 @@ let forecast = response.data.daily;
       <span class="weather-forecast-date">${formatDay(forecastDay.dt)}</span>
       <br />
       <img 
-      src="images/icons/${forecastDay.weather[0].icon}.svg" width="50%">
+      src="images/icons/${forecastDay.weather[0].icon}.svg" width="30%">
       <br />
       <span class="weather-forecast-temperature-max">${Math.round(forecastDay.temp.max)}°C</span>/</span 
       class="weather-forecast-temperature-min">${Math.round(forecastDay.temp.min)}°C</span>
