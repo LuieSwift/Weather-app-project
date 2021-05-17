@@ -68,7 +68,7 @@ function displayForecast(response) {
       <span class="weather-forecast-date">${formatDay(forecastDay.dt)}</span>
       <br />
       <img 
-      src="images/icons/${forecastDay.weather[0].icon}.svg" width="70%">
+      src="images/icons/${forecastDay.weather[0].icon}.svg" width="50%">
       <br />
       <span class="weather-forecast-temperature-max">${Math.round(
         forecastDay.temp.max
